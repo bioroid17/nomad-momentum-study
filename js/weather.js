@@ -1,15 +1,19 @@
-const API_KEY = "2852b468c611466594838efc2a155463";
+const API_KEY = "9a4e4be0c88d7ac25511279c85cce0d8";
 
 function onGeoSuccess(position) {
   const lat = position.coords.latitude;
   const lon = position.coords.longitude;
-  const url = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      const weather = document.querySelector("#weather span:first-child");
-      weather.innerText = `${data.weather[0].main} / ${data.main.temp}`;
-      const city = document.querySelector("#weather span:last-child");
+      const temperature = document.querySelector("#temperature");
+      const weatherIcon = document.createElement("img");
+      weatherIcon.id = "weather-icon";
+      weatherIcon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+      document.querySelector("#weather div").before(weatherIcon);
+      temperature.innerText = `${parseInt(data.main.temp)}℃`;
+      const city = document.querySelector("#city");
       city.innerText = data.name;
     });
 }

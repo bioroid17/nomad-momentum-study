@@ -1,6 +1,20 @@
 #weather {
+  width: max-content;
+  justify-self: end;
+  align-items: end;
+  display: grid;
+}
+#weather div {
+  height: 64px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-end;
+}
+#weather-icon {
+  height: 64px;
+  width: 64px;
+}
+#temperature {
+  font-size: 32px;
 }
