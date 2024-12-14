@@ -1,0 +1,18 @@
+#todo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#todo-list {
+  font-size: 20px;
+}
+#todo-list li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#todo-list button {
+  background-color: transparent;
+}

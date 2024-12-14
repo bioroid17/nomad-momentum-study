@@ -1,0 +1,85 @@
+@import "reset.css";
+@import "components/background.css";
+@import "components/clock.css";
+@import "components/greetings.css";
+@import "components/quotes.css";
+@import "components/todo.css";
+@import "components/weather.css";
+
+@keyframes appear {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+ol,
+ul {
+  list-style: disc;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 15px;
+}
+header,
+main,
+footer {
+  width: 100%;
+  opacity: 0;
+  color: white;
+  animation: appear 0.5s ease-in forwards;
+  animation-delay: 0.2s;
+  display: flex;
+  align-items: center;
+}
+header {
+  height: 30px;
+  flex-direction: row;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
+main {
+  flex-direction: column;
+  justify-content: center;
+}
+footer {
+  height: 30px;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  border: none;
+}
+button:hover {
+  cursor: pointer;
+}
+
+#login-form button {
+  background-color: green;
+  height: 30px;
+  border-radius: 5px;
+}
+input {
+  border: none;
+  color: white;
+  background-color: transparent;
+  font-size: 24px;
+  min-width: 400px;
+  border-bottom: 5px solid white;
+  margin: 10px 0px;
+}
+input::placeholder {
+  color: white;
+}

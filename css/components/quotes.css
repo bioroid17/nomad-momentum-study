@@ -1,0 +1,11 @@
+#quote {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+#quote span:last-child {
+  font-size: 12px;
+}
