@@ -1,57 +1,71 @@
 const quotes = [
   {
-    quote: "I never dreamed about success, I worked for it.",
-    author: "Estee Lauder",
+    quote: "Break this heavy chain, That does freeze my bones around!",
+    from: "Earth's Answers",
   },
   {
-    quote: "Do not try to be original, just try to be good.",
-    author: "Paul Rand",
+    quote: "But the following Contraries to these are True.",
+    from: "The Voice of the Devil",
   },
   {
-    quote: "Do not be afraid to give up the good to go for the great.",
-    author: "John D. Rockefeller",
-  },
-  {
-    quote:
-      "If you cannot fly then run. If you cannot run, then walk. And if you cannot walk, then crawl, but whatever you do, you have to keep moving forward.",
-    author: "Martin Luther King Jr.",
+    quote: "I have no name; I am but two days old...",
+    from: "Infant Joy",
   },
   {
     quote:
-      "Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time.",
-    author: "Thomas Edison",
+      "The Angel that presided 'oer my birth said, \"Little creature, form'd of Joy and Mirth, Go love without the help of any Thing on Earth.\"",
+    from: "The Angel that presided 'oer my birth",
   },
   {
     quote:
-      "The fastest way to change yourself is to hang out with people who are already the way you want to be.",
-    author: "Reid Hoffman",
+      "To see a World in a Grain of Sand and a Heaven in a Wild Flower, Hold Infinity in the palm of your hand And Eternity in an hour.",
+    from: "Auguries of Innocence",
   },
   {
     quote:
-      "Money is like gasoline during a road trip. You do not want to run out of gas on your trip, but you are not doing a tour of gas stations.",
-    author: "Tim O Reilly",
+      "I curse my stars in bitter grief and woe, That made my love so high and me so low.",
+    from: "When early morn walks forth in sober grey",
+  },
+  {
+    quote: "Little wanderer, hie thee home!",
+    from: "A Dream",
+  },
+  {
+    quote: "He who desires but acts not, breeds pestilence.",
+    from: "Proverbs of Hell",
   },
   {
     quote:
-      "Some people dream of success, while other people get up every morning and make it happen.",
-    author: "Wayne Huizenga",
+      "As the air to a bird or the sea to a fish, so is contempt to the contemptible.",
+    from: "Proverbs of Hell",
+  },
+  {
+    quote: "If the fool would persist in his folly he would become wise.",
+    from: "Proverbs of Hell",
+  },
+  {
+    quote: "The cut worm forgives the plow.",
+    from: "Proverbs of Hell",
+  },
+  {
+    quote: "One thought, fills immensity.",
+    from: "Proverbs of Hell",
   },
   {
     quote:
-      "The only thing worse than starting something and falling... is not starting something.",
-    author: "Seth Godin",
+      "The hours of folly are measur’d by the clock, but of wisdom: no clock can measure.",
+    from: "Proverbs of Hell",
   },
   {
-    quote:
-      "If you really want to do something, you will find a way. If you do not, you will find an excuse.",
-    author: "Jim Rohn",
+    quote: "While thy branches mix with mine, and our roots together join.",
+    from: "Love and harmony combine",
   },
 ];
 
 const quote = document.querySelector("#quote span:first-child");
-const author = document.querySelector("#quote span:last-child");
+const from = document.querySelector("#quote span:last-child");
 
 const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
 quote.innerText = todaysQuote.quote;
-author.innerText = todaysQuote.author;
+from.innerText = todaysQuote.from;
