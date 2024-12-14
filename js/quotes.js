@@ -68,4 +68,4 @@ const from = document.querySelector("#quote span:last-child");
 const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
 quote.innerText = todaysQuote.quote;
-from.innerText = todaysQuote.from;
+from.innerText = `- ${todaysQuote.from} -`;

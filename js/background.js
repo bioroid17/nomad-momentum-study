@@ -3,7 +3,6 @@ const images = [
   "DMC5_Clear_Bonus_Art_2.webp",
   "DMC5_Clear_Bonus_Art_3.webp",
   "DMC5_Clear_Bonus_Art_4.webp",
-  "DMC5_Clear_Bonus_Art_5.webp",
   "DMC5_Clear_Bonus_Art_6.webp",
   "DMC5_Clear_Bonus_Art_7.webp",
   "DMC5_Clear_Bonus_Art_8.webp",
@@ -23,7 +22,6 @@ const images = [
   "DMC5_Clear_Bonus_Art_22.webp",
   "DMC5_Clear_Bonus_Art_23.webp",
   "DMC5_Clear_Bonus_Art_24.webp",
-  "DMC5_Clear_Bonus_Art_25.webp",
   "DMC5_Clear_Bonus_Art_26.webp",
   "DMC5_Clear_Bonus_Art_27.webp",
   "DMC5_Clear_Bonus_Art_28.webp",
@@ -34,7 +32,6 @@ const images = [
   "DMC5_Clear_Bonus_Art_33.webp",
   "DMC5_Clear_Bonus_Art_34.webp",
   "DMC5_Keyart_Spread_Logo.webp",
-  "DMC5_Secret_Ending_Group_Photo.webp",
 ];
 
 const chosenImage = images[Math.floor(Math.random() * images.length)];
