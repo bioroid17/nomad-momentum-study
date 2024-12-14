@@ -1,10 +1,11 @@
-const dmc5Font = new FontFace("DMC5", "/fonts/Devil_May_Cry_5.ttf");
+const dmc5Font = new FontFace("DMC5", "url(fonts/DMC5Font.otf)");
 
 dmc5Font
   .load()
-  .then(function () {
-    console.log("DMC5 font loaded!");
+  .then(function (data) {
+    document.fonts.add(data);
+    document.body.style.fontFamily = data.family;
   })
-  .catch(function () {
-    console.log("Failed to load font");
+  .catch(function (err) {
+    console.log(err);
   });
