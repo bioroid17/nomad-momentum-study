@@ -3,6 +3,7 @@
   justify-self: end;
   align-items: end;
   display: grid;
+  grid-template-columns: max-content max-content;
 }
 #weather div {
   height: 64px;

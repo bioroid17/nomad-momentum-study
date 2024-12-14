@@ -12,7 +12,7 @@ function onGeoSuccess(position) {
       weatherIcon.id = "weather-icon";
       weatherIcon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
       document.querySelector("#weather div").before(weatherIcon);
-      temperature.innerText = `${parseInt(data.main.temp)}℃`;
+      temperature.innerText = `${parseInt(data.main.temp)}°C`;
       const city = document.querySelector("#city");
       city.innerText = data.name;
     });
