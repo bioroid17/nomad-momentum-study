@@ -48,8 +48,26 @@
         <span></span>
       </div>
     </footer>
+    <div id="links-modal" class="hidden">
+      <div id="add-link">+ Add Link</div>
+      <div id="favorites"></div>
+    </div>
+    <div id="new-link" class="hidden">
+      <form id="new-link-form">
+        <input
+          type="text"
+          id="name"
+          placeholder="Name"
+          required
+          maxlength="10"
+        />
+        <input type="url" id="url" placeholder="URL" required />
+        <button type="submit" id="create-btn">Create</button>
+      </form>
+    </div>
     <script src="js/font.js"></script>
     <script src="js/greetings.js"></script>
+    <script src="js/links.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>

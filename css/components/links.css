@@ -1,0 +1,54 @@
+#links {
+  padding: 12px;
+  align-self: center;
+}
+#add-link,
+#links span {
+  padding: 4px;
+  border-radius: 8px;
+}
+#add-link:hover,
+#links span:hover {
+  cursor: pointer;
+  background-color: rgba(127, 127, 127, 0.5);
+}
+#links-modal,
+#new-link {
+  background-color: black;
+  opacity: 0.7;
+  width: 200px;
+  border-radius: 20px;
+  border: none;
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  padding: 20px;
+}
+#favorites {
+  max-height: 150px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 10px;
+}
+#favorites div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#favorites img {
+  margin-right: 5px;
+}
+#favorites button {
+  background-color: transparent;
+}
+#new-link input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  margin-bottom: 30px;
+  color: white;
+  width: 100%;
+}
